@@ -1,0 +1,24 @@
+{
+    "@odata.type": "#microsoft.graph.activeDirectoryWindowsAutopilotDeploymentProfile",
+    "displayName": "Windows Hybrid Azure AD Joined",
+    "description": "This profile joins targeted devices as Hybrid Azure AD Joined in Microsoft Intune",
+    "language": "os-default",
+    "enrollmentStatusScreenSettings": null,
+    "extractHardwareHash": false,
+    "deviceNameTemplate": "",
+    "deviceType": "windowsPc",
+    "enableWhiteGlove": false,
+    "roleScopeTagIds": [
+        "0"
+    ],
+    "managementServiceAppId": null,
+    "hybridAzureADJoinSkipConnectivityCheck": false,
+    "outOfBoxExperienceSettings": {
+        "hidePrivacySettings": true,
+        "hideEULA": true,
+        "userType": "standard",
+        "deviceUsageType": "singleUser",
+        "skipKeyboardSelectionPage": true,
+        "hideEscapeLink": true
+    }
+}
