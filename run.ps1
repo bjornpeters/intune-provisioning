@@ -10,10 +10,12 @@
 # Get-IntuneDeploymentProfile -AccessToken $accessToken
 # New-IntuneDeploymentProfile -AccessToken $accessToken -Body $hybridBody
 
-Write-Host "##[group]Beginning of a group"
-Write-Host "##[warning]Warning message"
-Write-Host "##[error]Error message"
-Write-Host "##[section]Start of a section"
-Write-Host "##[debug]Debug text"
-Write-Host "##[command]Command-line being run"
-Write-Host "##[endgroup]"
+Write-Host "Begin a lengthy process..."
+$i=0
+While ($i -le 100)
+{
+   Start-Sleep 1
+   Write-Host "##vso[task.setprogress value=$i;]Sample Progress Indicator"
+   $i += 10
+}
+Write-Host "Lengthy process is complete."
